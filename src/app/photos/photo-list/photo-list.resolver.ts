@@ -14,6 +14,6 @@ import { Photo } from '../photo/photo';
      resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
          const userName = route.params.userName;
 
-         return this.service.listFromUser(userName);
+         return this.service.listFromUserPaginated(userName, 1);
      }
  }
